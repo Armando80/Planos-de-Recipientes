@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactoPlanos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--link ara traer las fuentes-->
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700;900&display=swap" rel="stylesheet">
+<!-- link para traer iconos -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="nav-contact">
+        <a href="index.html"><img style="width: 120px; height: 120px;" src="https://i.postimg.cc/8C7SwzTR/Logo.jpg" alt="PlanosDeRecipientes"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a href="index.html#servicios">SERVICIOS</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="h1-contact">Contáctenos!</h1>
+        <div class="hero">
+        <form action="form-handler.php" method="post">
+            <div class="row-contact">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name"><i class="fa fa-user"></i> Su Nombre</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" name="phone" required>
+                    <label for="number"><i class="fa fa-phone"></i> No. Telefono</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" name="message" required></textarea>
+                <label for="message"><i class="fa fa-comments"></i> Su Mensage</label>
+            </div>
+            <button type="submit">Enviar  <i class="fa fa-paper-plane"></i></button>
+        </form>
+    </div>
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.6545755450497!2d-99.1025456496013!3d19.470454249489894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9619114fefb%3A0x96ba9575c249e86d!2sNte%2080-A%2C%20San%20Pedro%20el%20Chico%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1634241799899!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="containner-footer-all" >
+            <div class="containner-body">
+                <div class="column1">
+                    <h1>Más infromación</h1>
+                    <p>Si requiere más información estamos a sus órdenes!.
+                        En cualquier estado de la republica mexicana con gusto lo atenderemos, nuestros horarios de atención son de Lunes a Viernes de 9:00 a 18:00 hrs.</p>
+                </div>
+                <div class="column2">
+                    <h1>Síganos!</h1>
+                    <div class="col2-row">
+                        <i class="fa fa-instagram" aria-hidden="true"> <a href="https://www.instagram.com/planosrecipientes/" target="_blank">PlanosDeRecipientes</a></i>
+                    </div>
+                    <div class="col2-row">
+                        <i class="fa fa-linkedin" aria-hidden="true"> PlanosDeRecipientes</i>
+                    </div>
+                </div>
+                <div class="column3">
+                    <h1>Contacto</h1>
+                    <!--<div class="col3-row">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <p>Norte 80A #6641
+                        Col. San Pedro el Chico, CP 07480
+                        Ciudad de México</p>
+                    </div>-->
+                    <div class="col3-row">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>(55) 6797-3457</p>
+                        <p>(55) 5760-7643</p>
+                    </div>
+                    <div class="col3-row">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>planosdrecipientes.ing@gmail.com</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="containner-footer">
+        <div class="copyrigth">
+            © 2021 Todos los derechos reservados. | <a href="https://www.linkedin.com/in/armando-flores-cano-0ba88799">AFC</a>
+        </div>
+    </div>
+    </footer>
+    <!----JavaScript para alternar menu en vista para movil---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
